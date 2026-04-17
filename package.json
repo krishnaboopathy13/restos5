@@ -1,0 +1,13 @@
+{
+  "name": "restos",
+  "version": "4.1.0",
+  "description": "RestOS — India's Most Advanced Restaurant Operating System",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}

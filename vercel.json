@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "restos",
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" },
+    { "src": "public/**",   "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/claude", "dest": "/api/claude.js" },
+    { "src": "/sw.js",       "dest": "/public/sw.js",       "headers": { "Cache-Control": "no-cache, no-store, must-revalidate" } },
+    { "src": "/manifest.json","dest": "/public/manifest.json","headers": { "Cache-Control": "no-cache" } },
+    { "src": "/(.*)",        "dest": "/public/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}

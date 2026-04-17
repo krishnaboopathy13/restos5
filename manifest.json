@@ -1,0 +1,47 @@
+{
+  "name":             "RestOS — Restaurant Operating System",
+  "short_name":       "RestOS",
+  "description":      "India's most advanced restaurant POS — AI-powered, offline-first",
+  "start_url":        "/",
+  "display":          "standalone",
+  "orientation":      "any",
+  "background_color": "#080810",
+  "theme_color":      "#f5a623",
+  "lang":             "en-IN",
+  "categories":       ["business", "productivity", "food"],
+  "icons": [
+    {
+      "src":   "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='80' fill='%23f5a623'/><text y='380' x='60' font-size='340' font-weight='900' font-family='Arial,sans-serif' fill='%23080810'>R</text></svg>",
+      "sizes": "512x512",
+      "type":  "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src":   "/index.html",
+      "sizes": "1280x720",
+      "type":  "image/png",
+      "label": "RestOS POS Screen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name":      "Open POS",
+      "url":       "/?module=pos",
+      "icons":     [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name":      "Kitchen Display",
+      "url":       "/?module=kot",
+      "icons":     [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name":      "Reports",
+      "url":       "/?module=reports",
+      "icons":     [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
